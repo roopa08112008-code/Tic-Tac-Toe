@@ -1,0 +1,30 @@
+The testbench creates this sequence:
+
+Player 1 → Position 0
+Player 2 → Position 1
+Player 1 → Position 3
+Player 2 → Position 4
+Player 1 → Position 6
+
+Therefore Player 1 wins using the first column:
+
+ X | O | -
+---+---+---
+ X | O | -
+---+---+---
+ X | - | -
+
+Expected simulator output:
+------------------------------------------------------------
+                 TIC-TAC-TOE SIMULATION
+------------------------------------------------------------
+Time=22 | Position= 0 | ... | Winner=00 | Game Over=0
+Time=34 | Position= 1 | ... | Winner=00 | Game Over=0
+Time=46 | Position= 3 | ... | Winner=00 | Game Over=0
+Time=58 | Position= 4 | ... | Winner=00 | Game Over=0
+Time=70 | Position= 6 | ... | Winner=01 | Game Over=1
+------------------------------------------------------------
+RESULT: PLAYER 1 WINS!
+------------------------------------------------------------
+Simulation Completed Successfully.
+------------------------------------------------------------
